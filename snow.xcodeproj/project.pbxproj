@@ -10,7 +10,6 @@
 		FE37CEDB1D18887F0008AF4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE37CEDA1D18887F0008AF4F /* AppDelegate.swift */; };
 		FE37CEDE1D18887F0008AF4F /* snow.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE37CEDC1D18887F0008AF4F /* snow.xcdatamodeld */; };
 		FE37CEE01D18887F0008AF4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE37CEDF1D18887F0008AF4F /* ViewController.swift */; };
-		FE37CEE31D18887F0008AF4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE37CEE11D18887F0008AF4F /* Main.storyboard */; };
 		FE37CEE51D18887F0008AF4F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE37CEE41D18887F0008AF4F /* Images.xcassets */; };
 		FE37CEE81D18887F0008AF4F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE37CEE61D18887F0008AF4F /* LaunchScreen.xib */; };
 		FE37CEF41D18887F0008AF4F /* snowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE37CEF31D18887F0008AF4F /* snowTests.swift */; };
@@ -32,7 +31,6 @@
 		FE37CEDA1D18887F0008AF4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE37CEDD1D18887F0008AF4F /* snow.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = snow.xcdatamodel; sourceTree = "<group>"; };
 		FE37CEDF1D18887F0008AF4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FE37CEE21D18887F0008AF4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FE37CEE41D18887F0008AF4F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FE37CEE71D18887F0008AF4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FE37CEED1D18887F0008AF4F /* snowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = snowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,7 +79,6 @@
 			children = (
 				FE37CEDA1D18887F0008AF4F /* AppDelegate.swift */,
 				FE37CEDF1D18887F0008AF4F /* ViewController.swift */,
-				FE37CEE11D18887F0008AF4F /* Main.storyboard */,
 				FE37CEE41D18887F0008AF4F /* Images.xcassets */,
 				FE37CEE61D18887F0008AF4F /* LaunchScreen.xib */,
 				FE37CEDC1D18887F0008AF4F /* snow.xcdatamodeld */,
@@ -195,7 +192,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE37CEE31D18887F0008AF4F /* Main.storyboard in Resources */,
 				FE37CEE81D18887F0008AF4F /* LaunchScreen.xib in Resources */,
 				FE37CEE51D18887F0008AF4F /* Images.xcassets in Resources */,
 			);
@@ -240,14 +236,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FE37CEE11D18887F0008AF4F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FE37CEE21D18887F0008AF4F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FE37CEE61D18887F0008AF4F /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -413,6 +401,7 @@
 				FE37CEF91D18887F0008AF4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE37CEFA1D18887F0008AF4F /* Build configuration list for PBXNativeTarget "snowTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +410,7 @@
 				FE37CEFC1D18887F0008AF4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
