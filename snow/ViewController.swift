@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var frame: CGRect = UIScreen.mainScreen().bounds
+        let frame: CGRect = UIScreen.mainScreen().bounds
         
         self.view.addSubview(getTitleLabel(frame))
         self.view.addSubview(getButton(frame))
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         let button = UIButton(frame: CGRectMake(frame.size.width/2-50, frame.size.height/2-50, 100, 100))
         button.backgroundColor = UIColor.brownColor()
         button.setTitle("Würfeln", forState: UIControlState.Normal)
-        button.addTarget(self, action: "didTouchButton:", forControlEvents: .TouchUpInside)
+        button.addTarget(self, action: #selector(ViewController.didTouchButton(_:)), forControlEvents: .TouchUpInside)
         return button
     }
     

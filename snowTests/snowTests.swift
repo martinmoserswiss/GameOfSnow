@@ -34,9 +34,9 @@ class snowTests: XCTestCase {
     }
     
     func testAplusB() {
-        var a = 5
-        var b = 10
-        var c = a+b
+        let a = 5
+        let b = 10
+        let c = a+b
         XCTAssertEqual(c, 15, "Pass")
     }
     
