@@ -12,7 +12,9 @@
 		FE37CEE01D18887F0008AF4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE37CEDF1D18887F0008AF4F /* ViewController.swift */; };
 		FE37CEE51D18887F0008AF4F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE37CEE41D18887F0008AF4F /* Images.xcassets */; };
 		FE37CEE81D18887F0008AF4F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE37CEE61D18887F0008AF4F /* LaunchScreen.xib */; };
-		FE37CEF41D18887F0008AF4F /* snowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE37CEF31D18887F0008AF4F /* snowTests.swift */; };
+		FECC2FCA1D1D969F00AB2915 /* TrickDrawerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC2FC91D1D969F00AB2915 /* TrickDrawerTests.swift */; };
+		FECC2FD31D1D9A9B00AB2915 /* TrickDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC2FD21D1D9A9B00AB2915 /* TrickDrawer.swift */; };
+		FECC2FD41D1D9BD600AB2915 /* TrickDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC2FD21D1D9A9B00AB2915 /* TrickDrawer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,19 +25,36 @@
 			remoteGlobalIDString = FE37CED41D18887F0008AF4F;
 			remoteInfo = snow;
 		};
+		FECC2FBC1D1D950C00AB2915 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE37CECD1D18887F0008AF4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE37CED41D18887F0008AF4F;
+			remoteInfo = GameOfSnow;
+		};
+		FECC2FCC1D1D969F00AB2915 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE37CECD1D18887F0008AF4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE37CED41D18887F0008AF4F;
+			remoteInfo = GameOfSnow;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FE37CED51D18887F0008AF4F /* snow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = snow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE37CED51D18887F0008AF4F /* GameOfSnow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameOfSnow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE37CED91D18887F0008AF4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE37CEDA1D18887F0008AF4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE37CEDD1D18887F0008AF4F /* snow.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = snow.xcdatamodel; sourceTree = "<group>"; };
 		FE37CEDF1D18887F0008AF4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FE37CEE41D18887F0008AF4F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FE37CEE71D18887F0008AF4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		FE37CEED1D18887F0008AF4F /* snowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = snowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE37CEF21D18887F0008AF4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FE37CEF31D18887F0008AF4F /* snowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = snowTests.swift; sourceTree = "<group>"; };
+		FE37CEED1D18887F0008AF4F /* GameOfSnow.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameOfSnow.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FECC2FB71D1D950C00AB2915 /* TrickDrawer.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrickDrawer.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FECC2FC71D1D969F00AB2915 /* TrickDrawerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrickDrawerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FECC2FC91D1D969F00AB2915 /* TrickDrawerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrickDrawerTests.swift; path = TrickDrawerTests/TrickDrawerTests.swift; sourceTree = "<group>"; };
+		FECC2FCB1D1D969F00AB2915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = TrickDrawerTests/Info.plist; sourceTree = "<group>"; };
+		FECC2FD21D1D9A9B00AB2915 /* TrickDrawer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrickDrawer.swift; path = TrickDrawer/TrickDrawer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,14 +72,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FECC2FB41D1D950C00AB2915 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FECC2FC41D1D969F00AB2915 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		FE37CECC1D18887F0008AF4F = {
 			isa = PBXGroup;
 			children = (
-				FE37CED71D18887F0008AF4F /* snow */,
-				FE37CEF01D18887F0008AF4F /* snowTests */,
+				FECC2FD11D1D9A5300AB2915 /* TrickDrawer */,
+				FE37CED71D18887F0008AF4F /* GameOfSnow */,
 				FE37CED61D18887F0008AF4F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,13 +101,15 @@
 		FE37CED61D18887F0008AF4F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FE37CED51D18887F0008AF4F /* snow.app */,
-				FE37CEED1D18887F0008AF4F /* snowTests.xctest */,
+				FE37CED51D18887F0008AF4F /* GameOfSnow.app */,
+				FE37CEED1D18887F0008AF4F /* GameOfSnow.xctest */,
+				FECC2FB71D1D950C00AB2915 /* TrickDrawer.xctest */,
+				FECC2FC71D1D969F00AB2915 /* TrickDrawerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FE37CED71D18887F0008AF4F /* snow */ = {
+		FE37CED71D18887F0008AF4F /* GameOfSnow */ = {
 			isa = PBXGroup;
 			children = (
 				FE37CEDA1D18887F0008AF4F /* AppDelegate.swift */,
@@ -84,6 +119,7 @@
 				FE37CEDC1D18887F0008AF4F /* snow.xcdatamodeld */,
 				FE37CED81D18887F0008AF4F /* Supporting Files */,
 			);
+			name = GameOfSnow;
 			path = snow;
 			sourceTree = "<group>";
 		};
@@ -95,29 +131,22 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		FE37CEF01D18887F0008AF4F /* snowTests */ = {
+		FECC2FD11D1D9A5300AB2915 /* TrickDrawer */ = {
 			isa = PBXGroup;
 			children = (
-				FE37CEF31D18887F0008AF4F /* snowTests.swift */,
-				FE37CEF11D18887F0008AF4F /* Supporting Files */,
+				FECC2FC91D1D969F00AB2915 /* TrickDrawerTests.swift */,
+				FECC2FCB1D1D969F00AB2915 /* Info.plist */,
+				FECC2FD21D1D9A9B00AB2915 /* TrickDrawer.swift */,
 			);
-			path = snowTests;
-			sourceTree = "<group>";
-		};
-		FE37CEF11D18887F0008AF4F /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				FE37CEF21D18887F0008AF4F /* Info.plist */,
-			);
-			name = "Supporting Files";
+			name = TrickDrawer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FE37CED41D18887F0008AF4F /* snow */ = {
+		FE37CED41D18887F0008AF4F /* GameOfSnow */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FE37CEF71D18887F0008AF4F /* Build configuration list for PBXNativeTarget "snow" */;
+			buildConfigurationList = FE37CEF71D18887F0008AF4F /* Build configuration list for PBXNativeTarget "GameOfSnow" */;
 			buildPhases = (
 				FE37CED11D18887F0008AF4F /* Sources */,
 				FE37CED21D18887F0008AF4F /* Frameworks */,
@@ -127,14 +156,14 @@
 			);
 			dependencies = (
 			);
-			name = snow;
+			name = GameOfSnow;
 			productName = snow;
-			productReference = FE37CED51D18887F0008AF4F /* snow.app */;
+			productReference = FE37CED51D18887F0008AF4F /* GameOfSnow.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FE37CEEC1D18887F0008AF4F /* snowTests */ = {
+		FE37CEEC1D18887F0008AF4F /* GameOfSnowTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FE37CEFA1D18887F0008AF4F /* Build configuration list for PBXNativeTarget "snowTests" */;
+			buildConfigurationList = FE37CEFA1D18887F0008AF4F /* Build configuration list for PBXNativeTarget "GameOfSnowTests" */;
 			buildPhases = (
 				FE37CEE91D18887F0008AF4F /* Sources */,
 				FE37CEEA1D18887F0008AF4F /* Frameworks */,
@@ -145,9 +174,45 @@
 			dependencies = (
 				FE37CEEF1D18887F0008AF4F /* PBXTargetDependency */,
 			);
-			name = snowTests;
+			name = GameOfSnowTests;
 			productName = snowTests;
-			productReference = FE37CEED1D18887F0008AF4F /* snowTests.xctest */;
+			productReference = FE37CEED1D18887F0008AF4F /* GameOfSnow.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FECC2FB61D1D950C00AB2915 /* TrickDrawer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FECC2FC01D1D950C00AB2915 /* Build configuration list for PBXNativeTarget "TrickDrawer" */;
+			buildPhases = (
+				FECC2FB31D1D950C00AB2915 /* Sources */,
+				FECC2FB41D1D950C00AB2915 /* Frameworks */,
+				FECC2FB51D1D950C00AB2915 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FECC2FBD1D1D950C00AB2915 /* PBXTargetDependency */,
+			);
+			name = TrickDrawer;
+			productName = TrickDrawer;
+			productReference = FECC2FB71D1D950C00AB2915 /* TrickDrawer.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FECC2FC61D1D969F00AB2915 /* TrickDrawerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FECC2FCE1D1D969F00AB2915 /* Build configuration list for PBXNativeTarget "TrickDrawerTests" */;
+			buildPhases = (
+				FECC2FC31D1D969F00AB2915 /* Sources */,
+				FECC2FC41D1D969F00AB2915 /* Frameworks */,
+				FECC2FC51D1D969F00AB2915 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FECC2FCD1D1D969F00AB2915 /* PBXTargetDependency */,
+			);
+			name = TrickDrawerTests;
+			productName = TrickDrawerTests;
+			productReference = FECC2FC71D1D969F00AB2915 /* TrickDrawerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -168,9 +233,17 @@
 						CreatedOnToolsVersion = 6.3;
 						TestTargetID = FE37CED41D18887F0008AF4F;
 					};
+					FECC2FB61D1D950C00AB2915 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = FE37CED41D18887F0008AF4F;
+					};
+					FECC2FC61D1D969F00AB2915 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = FE37CED41D18887F0008AF4F;
+					};
 				};
 			};
-			buildConfigurationList = FE37CED01D18887F0008AF4F /* Build configuration list for PBXProject "snow" */;
+			buildConfigurationList = FE37CED01D18887F0008AF4F /* Build configuration list for PBXProject "GameOfSnow" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -183,8 +256,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FE37CED41D18887F0008AF4F /* snow */,
-				FE37CEEC1D18887F0008AF4F /* snowTests */,
+				FE37CED41D18887F0008AF4F /* GameOfSnow */,
+				FE37CEEC1D18887F0008AF4F /* GameOfSnowTests */,
+				FECC2FB61D1D950C00AB2915 /* TrickDrawer */,
+				FECC2FC61D1D969F00AB2915 /* TrickDrawerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -206,6 +281,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FECC2FB51D1D950C00AB2915 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FECC2FC51D1D969F00AB2915 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -214,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE37CEE01D18887F0008AF4F /* ViewController.swift in Sources */,
+				FECC2FD31D1D9A9B00AB2915 /* TrickDrawer.swift in Sources */,
 				FE37CEDE1D18887F0008AF4F /* snow.xcdatamodeld in Sources */,
 				FE37CEDB1D18887F0008AF4F /* AppDelegate.swift in Sources */,
 			);
@@ -223,7 +313,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE37CEF41D18887F0008AF4F /* snowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FECC2FB31D1D950C00AB2915 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FECC2FC31D1D969F00AB2915 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FECC2FD41D1D9BD600AB2915 /* TrickDrawer.swift in Sources */,
+				FECC2FCA1D1D969F00AB2915 /* TrickDrawerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,8 +337,18 @@
 /* Begin PBXTargetDependency section */
 		FE37CEEF1D18887F0008AF4F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FE37CED41D18887F0008AF4F /* snow */;
+			target = FE37CED41D18887F0008AF4F /* GameOfSnow */;
 			targetProxy = FE37CEEE1D18887F0008AF4F /* PBXContainerItemProxy */;
+		};
+		FECC2FBD1D1D950C00AB2915 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE37CED41D18887F0008AF4F /* GameOfSnow */;
+			targetProxy = FECC2FBC1D1D950C00AB2915 /* PBXContainerItemProxy */;
+		};
+		FECC2FCD1D1D969F00AB2915 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE37CED41D18887F0008AF4F /* GameOfSnow */;
+			targetProxy = FECC2FCC1D1D969F00AB2915 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -340,8 +455,8 @@
 				INFOPLIST_FILE = snow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "ch.martinmoser.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = ch.martinmoser.gameofsnow;
+				PRODUCT_NAME = GameOfSnow;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -355,8 +470,8 @@
 				INFOPLIST_FILE = snow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "ch.martinmoser.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = ch.martinmoser.gameofsnow;
+				PRODUCT_NAME = GameOfSnow;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
@@ -376,8 +491,8 @@
 				INFOPLIST_FILE = snowTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ch.martinmoser.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/snow.app/snow";
+				PRODUCT_NAME = GameOfSnow;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameOfSnow.app/GameOfSnow";
 			};
 			name = Debug;
 		};
@@ -392,15 +507,73 @@
 				INFOPLIST_FILE = snowTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ch.martinmoser.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = GameOfSnow;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameOfSnow.app/GameOfSnow";
+			};
+			name = Release;
+		};
+		FECC2FBE1D1D950C00AB2915 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = TrickDrawer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ch.martinmoser.TrickDrawer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/snow.app/snow";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameOfSnow.app/GameOfSnow";
+			};
+			name = Debug;
+		};
+		FECC2FBF1D1D950C00AB2915 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = TrickDrawer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ch.martinmoser.TrickDrawer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameOfSnow.app/GameOfSnow";
+			};
+			name = Release;
+		};
+		FECC2FCF1D1D969F00AB2915 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = TrickDrawerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ch.martinmoser.TrickDrawerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameOfSnow.app/GameOfSnow";
+			};
+			name = Debug;
+		};
+		FECC2FD01D1D969F00AB2915 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = TrickDrawerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ch.martinmoser.TrickDrawerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameOfSnow.app/GameOfSnow";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FE37CED01D18887F0008AF4F /* Build configuration list for PBXProject "snow" */ = {
+		FE37CED01D18887F0008AF4F /* Build configuration list for PBXProject "GameOfSnow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FE37CEF51D18887F0008AF4F /* Debug */,
@@ -409,7 +582,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FE37CEF71D18887F0008AF4F /* Build configuration list for PBXNativeTarget "snow" */ = {
+		FE37CEF71D18887F0008AF4F /* Build configuration list for PBXNativeTarget "GameOfSnow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FE37CEF81D18887F0008AF4F /* Debug */,
@@ -418,7 +591,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FE37CEFA1D18887F0008AF4F /* Build configuration list for PBXNativeTarget "snowTests" */ = {
+		FE37CEFA1D18887F0008AF4F /* Build configuration list for PBXNativeTarget "GameOfSnowTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FE37CEFB1D18887F0008AF4F /* Debug */,
@@ -426,6 +599,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		FECC2FC01D1D950C00AB2915 /* Build configuration list for PBXNativeTarget "TrickDrawer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FECC2FBE1D1D950C00AB2915 /* Debug */,
+				FECC2FBF1D1D950C00AB2915 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FECC2FCE1D1D969F00AB2915 /* Build configuration list for PBXNativeTarget "TrickDrawerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FECC2FCF1D1D969F00AB2915 /* Debug */,
+				FECC2FD01D1D969F00AB2915 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 

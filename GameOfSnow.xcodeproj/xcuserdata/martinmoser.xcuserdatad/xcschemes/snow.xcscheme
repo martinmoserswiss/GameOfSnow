@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FE37CED41D18887F0008AF4F"
-               BuildableName = "snow.app"
-               BlueprintName = "snow"
-               ReferencedContainer = "container:snow.xcodeproj">
+               BuildableName = "GameOfSnow.app"
+               BlueprintName = "GameOfSnow"
+               ReferencedContainer = "container:GameOfSnow.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FE37CEEC1D18887F0008AF4F"
-               BuildableName = "snowTests.xctest"
-               BlueprintName = "snowTests"
-               ReferencedContainer = "container:snow.xcodeproj">
+               BuildableName = "GameOfSnow.xctest"
+               BlueprintName = "GameOfSnowTests"
+               ReferencedContainer = "container:GameOfSnow.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,29 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FE37CEEC1D18887F0008AF4F"
-               BuildableName = "snowTests.xctest"
-               BlueprintName = "snowTests"
-               ReferencedContainer = "container:snow.xcodeproj">
+               BuildableName = "GameOfSnow.xctest"
+               BlueprintName = "GameOfSnowTests"
+               ReferencedContainer = "container:GameOfSnow.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "FECC2FB61D1D950C00AB2915"
+               BuildableName = "TrickDrawer.xctest"
+               BlueprintName = "TrickDrawer"
+               ReferencedContainer = "container:GameOfSnow.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "FECC2FC61D1D969F00AB2915"
+               BuildableName = "TrickDrawerTests.xctest"
+               BlueprintName = "TrickDrawerTests"
+               ReferencedContainer = "container:GameOfSnow.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FE37CED41D18887F0008AF4F"
-            BuildableName = "snow.app"
-            BlueprintName = "snow"
-            ReferencedContainer = "container:snow.xcodeproj">
+            BuildableName = "GameOfSnow.app"
+            BlueprintName = "GameOfSnow"
+            ReferencedContainer = "container:GameOfSnow.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -80,9 +100,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FE37CED41D18887F0008AF4F"
-            BuildableName = "snow.app"
-            BlueprintName = "snow"
-            ReferencedContainer = "container:snow.xcodeproj">
+            BuildableName = "GameOfSnow.app"
+            BlueprintName = "GameOfSnow"
+            ReferencedContainer = "container:GameOfSnow.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -99,9 +119,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FE37CED41D18887F0008AF4F"
-            BuildableName = "snow.app"
-            BlueprintName = "snow"
-            ReferencedContainer = "container:snow.xcodeproj">
+            BuildableName = "GameOfSnow.app"
+            BlueprintName = "GameOfSnow"
+            ReferencedContainer = "container:GameOfSnow.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
