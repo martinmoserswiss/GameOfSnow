@@ -10,9 +10,11 @@ import XCTest
 
 class TrickDrawerTests: XCTestCase {
     
+    var trickDrawer: TrickDrawer!
+    
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        trickDrawer = TrickDrawer()
     }
     
     override func tearDown() {
@@ -21,13 +23,11 @@ class TrickDrawerTests: XCTestCase {
     }
     
     func testIfTrickDrawerExists() {
-        let trickDrawer = TrickDrawer()
         XCTAssertNotNil(trickDrawer)
     }
     
-    func testIfTrickDrawerReturnsInt() {
-        let trickDrawer = TrickDrawer()
-        assert((trickDrawer.drawTrick() as Any) is Int)
+    func testIfDrawTrickReturnsInt() {
+        assert((trickDrawer.drawTrick() as Any) is String)
     }
     
 }

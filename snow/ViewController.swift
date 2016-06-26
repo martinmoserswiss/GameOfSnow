@@ -16,8 +16,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let frame: CGRect = UIScreen.mainScreen().bounds
-        
-        self.view.addSubview(getTitleLabel(frame))
+    
         self.view.addSubview(getButton(frame))
         self.view.addSubview(getResultLabel(frame))
     }
@@ -26,37 +25,34 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    func getTitleLabel (frame: CGRect) -> UILabel {
-        let titleLabel = UILabel(frame: CGRectMake(50,50, frame.size.width-100, 50))
-        titleLabel.textColor = UIColor.whiteColor()
-        titleLabel.textAlignment = NSTextAlignment.Center
-        titleLabel.backgroundColor = UIColor.blackColor()
-        titleLabel.text = "Game of SNOW"
-        return titleLabel
-    }
-    
     func getButton (frame: CGRect) -> UIButton {
-        let button = UIButton(frame: CGRectMake(frame.size.width/2-50, frame.size.height/2-50, 100, 100))
-        button.backgroundColor = UIColor.brownColor()
-        button.setTitle("Würfeln", forState: UIControlState.Normal)
+        let button = UIButton(frame: CGRectMake(frame.size.width/2-100, frame.size.height/2-200, 200, 200))
+        button.backgroundColor = UIColor(netHex: 0xFFA906)
+        button.layer.cornerRadius = 0.5 * button.bounds.size.width
+        button.setTitle("Trick!", forState: UIControlState.Normal)
+        button.titleLabel!.font =  UIFont(name: (button.titleLabel!.font?.fontName)!, size: 55)
         button.addTarget(self, action: #selector(ViewController.didTouchButton(_:)), forControlEvents: .TouchUpInside)
         return button
     }
     
     func didTouchButton(sender: UIButton!) {
-        if resultLabel.text == "Ou yeah yeah yeah yeah!!!" {
-            resultLabel.text = "... würfle dein Trick!"
+        if resultLabel.text == "Bs 7 Mute" {
+            resultLabel.text = ""
+            resultLabel.hidden = true
         } else {
-            resultLabel.text = "Ou yeah yeah yeah yeah!!!"
+            resultLabel.text = "Bs 7 Mute"
+            resultLabel.hidden = false
         }
     }
     
     func getResultLabel (frame:CGRect) -> UILabel {
-        resultLabel = UILabel(frame: CGRectMake(50,frame.size.height-150, frame.size.width-100, 50))
+        resultLabel = UILabel(frame: CGRectMake(0,frame.size.height-250, frame.size.width, 125))
         resultLabel.textColor = UIColor.whiteColor()
         resultLabel.textAlignment = NSTextAlignment.Center
-        resultLabel.backgroundColor = UIColor.blackColor()
-        resultLabel.text = "... würfle dein Trick!"
+        resultLabel.backgroundColor = UIColor(netHex: 0x7F898F)
+        resultLabel.text = ""
+        resultLabel.hidden = true
+        resultLabel.font = UIFont(name: resultLabel.font.fontName, size: 40)
         return resultLabel
     }
 }
