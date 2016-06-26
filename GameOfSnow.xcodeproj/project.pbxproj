@@ -16,10 +16,21 @@
 		FECC2FD31D1D9A9B00AB2915 /* TrickDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC2FD21D1D9A9B00AB2915 /* TrickDrawer.swift */; };
 		FECC2FD41D1D9BD600AB2915 /* TrickDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC2FD21D1D9A9B00AB2915 /* TrickDrawer.swift */; };
 		FECC2FD71D200DA300AB2915 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC2FD61D200DA300AB2915 /* UIColor.swift */; };
+		FECC2FDA1D202DCD00AB2915 /* RandomUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC2FD91D202DCD00AB2915 /* RandomUtil.swift */; };
+		FECC2FE21D202E0D00AB2915 /* RandomUtilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC2FE11D202E0D00AB2915 /* RandomUtilTests.swift */; };
+		FECC2FE91D202E6E00AB2915 /* RandomUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC2FD91D202DCD00AB2915 /* RandomUtil.swift */; };
+		FECC2FEA1D20345300AB2915 /* RandomUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC2FD91D202DCD00AB2915 /* RandomUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		FECC2FCC1D1D969F00AB2915 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE37CECD1D18887F0008AF4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE37CED41D18887F0008AF4F;
+			remoteInfo = GameOfSnow;
+		};
+		FECC2FE41D202E0D00AB2915 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FE37CECD1D18887F0008AF4F /* Project object */;
 			proxyType = 1;
@@ -41,6 +52,10 @@
 		FECC2FCB1D1D969F00AB2915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = TrickDrawerTests/Info.plist; sourceTree = "<group>"; };
 		FECC2FD21D1D9A9B00AB2915 /* TrickDrawer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrickDrawer.swift; path = TrickDrawer/TrickDrawer.swift; sourceTree = "<group>"; };
 		FECC2FD61D200DA300AB2915 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		FECC2FD91D202DCD00AB2915 /* RandomUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomUtil.swift; sourceTree = "<group>"; };
+		FECC2FDF1D202E0D00AB2915 /* RandomUtilTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomUtilTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FECC2FE11D202E0D00AB2915 /* RandomUtilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RandomUtilTests.swift; path = RandomUtilTests/RandomUtilTests.swift; sourceTree = "<group>"; };
+		FECC2FE31D202E0D00AB2915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = RandomUtilTests/Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,12 +73,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FECC2FDC1D202E0D00AB2915 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		FE37CECC1D18887F0008AF4F = {
 			isa = PBXGroup;
 			children = (
+				FECC2FD81D202DA400AB2915 /* Utils */,
 				FECC2FD51D200D8400AB2915 /* Extensions */,
 				FECC2FD11D1D9A5300AB2915 /* TrickDrawer */,
 				FE37CED71D18887F0008AF4F /* GameOfSnow */,
@@ -76,6 +99,7 @@
 			children = (
 				FE37CED51D18887F0008AF4F /* GameOfSnow.app */,
 				FECC2FC71D1D969F00AB2915 /* TrickDrawerTests.xctest */,
+				FECC2FDF1D202E0D00AB2915 /* RandomUtilTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,6 +144,16 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
+		FECC2FD81D202DA400AB2915 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FECC2FD91D202DCD00AB2915 /* RandomUtil.swift */,
+				FECC2FE11D202E0D00AB2915 /* RandomUtilTests.swift */,
+				FECC2FE31D202E0D00AB2915 /* Info.plist */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -158,6 +192,24 @@
 			productReference = FECC2FC71D1D969F00AB2915 /* TrickDrawerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		FECC2FDE1D202E0D00AB2915 /* RandomUtilTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FECC2FE61D202E0D00AB2915 /* Build configuration list for PBXNativeTarget "RandomUtilTests" */;
+			buildPhases = (
+				FECC2FDB1D202E0D00AB2915 /* Sources */,
+				FECC2FDC1D202E0D00AB2915 /* Frameworks */,
+				FECC2FDD1D202E0D00AB2915 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FECC2FE51D202E0D00AB2915 /* PBXTargetDependency */,
+			);
+			name = RandomUtilTests;
+			productName = RandomUtilTests;
+			productReference = FECC2FDF1D202E0D00AB2915 /* RandomUtilTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -173,6 +225,10 @@
 						DevelopmentTeam = 2QK6V728H8;
 					};
 					FECC2FC61D1D969F00AB2915 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = FE37CED41D18887F0008AF4F;
+					};
+					FECC2FDE1D202E0D00AB2915 = {
 						CreatedOnToolsVersion = 7.3.1;
 						TestTargetID = FE37CED41D18887F0008AF4F;
 					};
@@ -193,6 +249,7 @@
 			targets = (
 				FE37CED41D18887F0008AF4F /* GameOfSnow */,
 				FECC2FC61D1D969F00AB2915 /* TrickDrawerTests */,
+				FECC2FDE1D202E0D00AB2915 /* RandomUtilTests */,
 			);
 		};
 /* End PBXProject section */
@@ -214,6 +271,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FECC2FDD1D202E0D00AB2915 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -221,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FECC2FDA1D202DCD00AB2915 /* RandomUtil.swift in Sources */,
 				FE37CEE01D18887F0008AF4F /* ViewController.swift in Sources */,
 				FECC2FD31D1D9A9B00AB2915 /* TrickDrawer.swift in Sources */,
 				FE37CEDE1D18887F0008AF4F /* snow.xcdatamodeld in Sources */,
@@ -233,8 +298,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FECC2FEA1D20345300AB2915 /* RandomUtil.swift in Sources */,
 				FECC2FD41D1D9BD600AB2915 /* TrickDrawer.swift in Sources */,
 				FECC2FCA1D1D969F00AB2915 /* TrickDrawerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FECC2FDB1D202E0D00AB2915 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FECC2FE91D202E6E00AB2915 /* RandomUtil.swift in Sources */,
+				FECC2FE21D202E0D00AB2915 /* RandomUtilTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +320,11 @@
 			isa = PBXTargetDependency;
 			target = FE37CED41D18887F0008AF4F /* GameOfSnow */;
 			targetProxy = FECC2FCC1D1D969F00AB2915 /* PBXContainerItemProxy */;
+		};
+		FECC2FE51D202E0D00AB2915 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE37CED41D18887F0008AF4F /* GameOfSnow */;
+			targetProxy = FECC2FE41D202E0D00AB2915 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -401,6 +481,35 @@
 			};
 			name = Release;
 		};
+		FECC2FE71D202E0D00AB2915 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = RandomUtilTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ch.martinmoser.RandomUtilTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameOfSnow.app/GameOfSnow";
+			};
+			name = Debug;
+		};
+		FECC2FE81D202E0D00AB2915 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = RandomUtilTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ch.martinmoser.RandomUtilTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameOfSnow.app/GameOfSnow";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -427,6 +536,14 @@
 			buildConfigurations = (
 				FECC2FCF1D1D969F00AB2915 /* Debug */,
 				FECC2FD01D1D969F00AB2915 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FECC2FE61D202E0D00AB2915 /* Build configuration list for PBXNativeTarget "RandomUtilTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FECC2FE71D202E0D00AB2915 /* Debug */,
+				FECC2FE81D202E0D00AB2915 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

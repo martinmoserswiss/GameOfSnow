@@ -72,6 +72,16 @@
                ReferencedContainer = "container:GameOfSnow.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "FECC2FDE1D202E0D00AB2915"
+               BuildableName = "RandomUtilTests.xctest"
+               BlueprintName = "RandomUtilTests"
+               ReferencedContainer = "container:GameOfSnow.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

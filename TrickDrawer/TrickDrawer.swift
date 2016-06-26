@@ -10,14 +10,13 @@ import Foundation
 
 class TrickDrawer {
     
-    // TODO:
-    // Create a Constructor and a class Collection-Variable
-    // Call in the Constructor a method initTricks
-    // Implement the Method initTricks
-    // Assign Tricks to the Collection
-    // Draw randomly tricks out of the list and give it back
+    var tricks: [String]
+    
+    init() {
+        tricks = ["Bs 720 Mute","Bs 360 Mute","Bs 180 Mute","Fs 180 Melon","Fs 360 Indy","Fs 540 Tail","Bs 540 Nose","Fs 720 Tail"]
+    }
     
     func drawTrick() -> String {
-        return "Bs 720 Mute"
+        return tricks[RandomUtil.getRandomInt(tricks.count)]
     }
 }

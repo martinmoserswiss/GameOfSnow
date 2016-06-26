@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     var resultLabel : UILabel!;
+    var drawer : TrickDrawer!;
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,13 +37,9 @@ class ViewController: UIViewController {
     }
     
     func didTouchButton(sender: UIButton!) {
-        if resultLabel.text == "Bs 7 Mute" {
-            resultLabel.text = ""
-            resultLabel.hidden = true
-        } else {
-            resultLabel.text = "Bs 7 Mute"
-            resultLabel.hidden = false
-        }
+        drawer = TrickDrawer()
+        resultLabel.text = drawer.drawTrick()
+        resultLabel.hidden = false
     }
     
     func getResultLabel (frame:CGRect) -> UILabel {
