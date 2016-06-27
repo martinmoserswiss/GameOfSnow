@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DrawViewController.swift
 //  snow
 //
 //  Created by Martin Moser on 20.06.16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class DrawViewController: UIViewController {
     
     var resultLabel : UILabel!;
     var drawer : TrickDrawer!;
@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     
         self.view.addSubview(getButton(frame))
         self.view.addSubview(getResultLabel(frame))
+        self.setupDoneButton()
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,7 +33,7 @@ class ViewController: UIViewController {
         button.layer.cornerRadius = 0.5 * button.bounds.size.width
         button.setTitle("Trick!", forState: UIControlState.Normal)
         button.titleLabel!.font =  UIFont(name: (button.titleLabel!.font?.fontName)!, size: 55)
-        button.addTarget(self, action: #selector(ViewController.didTouchButton(_:)), forControlEvents: .TouchUpInside)
+        button.addTarget(self, action: #selector(DrawViewController.didTouchButton(_:)), forControlEvents: .TouchUpInside)
         return button
     }
     
@@ -51,6 +52,19 @@ class ViewController: UIViewController {
         resultLabel.hidden = true
         resultLabel.font = UIFont(name: resultLabel.font.fontName, size: 40)
         return resultLabel
+    }
+    
+    func setupDoneButton() {
+        let button = UIBarButtonItem(
+            barButtonSystemItem: UIBarButtonSystemItem.Done,
+            target: self, action: #selector(DrawViewController.didTouchDoneButton(_:)))
+        self.navigationItem.rightBarButtonItem = button;
+    }
+    
+    func didTouchDoneButton(sender: UIButton) {
+        print("Hello, world");
+        let svc = SettingsViewController()
+        self.navigationController?.viewControllers.append(svc)
     }
 }
 
