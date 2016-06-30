@@ -7,12 +7,31 @@
 //
 
 import UIKit
+import CoreData
 
 class SettingsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupOkButton()
+        
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        let managedContext = appDelegate.managedObjectContext
+        
+        let fetchRequest = NSFetchRequest(entityName: "Trick")
+        
+        do {
+            let results =
+                try managedContext!.executeFetchRequest(fetchRequest)
+            let tricks = results as! [NSManagedObject]
+            print("tricks has \(tricks.count) objects...")
+            for trick in tricks {
+                print("\(trick.valueForKey("name") as? String)!")
+            }
+        } catch let error as NSError {
+            print("Could not fetch \(error), \(error.userInfo)")
+        }
     }
     
     func setupOkButton() {
@@ -24,5 +43,21 @@ class SettingsViewController: UIViewController {
     
     func didTouchOkButton(sender: UIButton) {
         print("Hello, world");
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        let managedContext = appDelegate.managedObjectContext
+        
+        let entity = NSEntityDescription.entityForName("Trick", inManagedObjectContext: managedContext!)
+        
+        let trick = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
+        
+        trick.setValue("BS 1080 Mute", forKey: "name")
+        
+        do {
+            try managedContext?.save()
+        } catch let error as NSError {
+            print("Could not save \(error), \(error.userInfo)")
+        }
+        
     }
 }
