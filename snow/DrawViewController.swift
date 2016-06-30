@@ -56,15 +56,23 @@ class DrawViewController: UIViewController {
     
     func setupDoneButton() {
         let button = UIBarButtonItem(
-            barButtonSystemItem: UIBarButtonSystemItem.Done,
+            barButtonSystemItem: UIBarButtonSystemItem.Edit,
             target: self, action: #selector(DrawViewController.didTouchDoneButton(_:)))
         self.navigationItem.rightBarButtonItem = button;
+        
+        let bar: UINavigationBar! = self.navigationController?.navigationBar
+        
+        bar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+        bar.shadowImage = UIImage()
+        bar.backgroundColor = UIColor(netHex:0x1c85c1)
+        bar.tintColor = UIColor.whiteColor()
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
     }
     
     func didTouchDoneButton(sender: UIButton) {
         print("Hello, world");
-        let svc = SettingsViewController()
-        self.navigationController?.viewControllers.append(svc)
+        let ttvc = TricksTableViewController()
+        self.navigationController?.viewControllers.append(ttvc)
     }
 }
 

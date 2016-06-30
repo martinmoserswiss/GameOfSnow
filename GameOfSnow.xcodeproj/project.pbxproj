@@ -12,8 +12,8 @@
 		FE37CEE51D18887F0008AF4F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE37CEE41D18887F0008AF4F /* Images.xcassets */; };
 		FE37CEE81D18887F0008AF4F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE37CEE61D18887F0008AF4F /* LaunchScreen.xib */; };
 		FEC9415C1D21BB4E008CB0D5 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC9415B1D21BB4E008CB0D5 /* NavigationController.swift */; };
-		FEC9415E1D21BF21008CB0D5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC9415D1D21BF21008CB0D5 /* SettingsViewController.swift */; };
 		FEC941641D21C73F008CB0D5 /* snow.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FEC941621D21C73F008CB0D5 /* snow.xcdatamodeld */; };
+		FEC941661D259B38008CB0D5 /* TricksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC941651D259B38008CB0D5 /* TricksTableViewController.swift */; };
 		FECC2FCA1D1D969F00AB2915 /* TrickDrawerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC2FC91D1D969F00AB2915 /* TrickDrawerTests.swift */; };
 		FECC2FD31D1D9A9B00AB2915 /* TrickDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC2FD21D1D9A9B00AB2915 /* TrickDrawer.swift */; };
 		FECC2FD41D1D9BD600AB2915 /* TrickDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC2FD21D1D9A9B00AB2915 /* TrickDrawer.swift */; };
@@ -49,8 +49,8 @@
 		FE37CEE41D18887F0008AF4F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FE37CEE71D18887F0008AF4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FEC9415B1D21BB4E008CB0D5 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
-		FEC9415D1D21BF21008CB0D5 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FEC941631D21C73F008CB0D5 /* snow.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = snow.xcdatamodel; sourceTree = "<group>"; };
+		FEC941651D259B38008CB0D5 /* TricksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TricksTableViewController.swift; sourceTree = "<group>"; };
 		FECC2FC71D1D969F00AB2915 /* TrickDrawerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrickDrawerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FECC2FC91D1D969F00AB2915 /* TrickDrawerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrickDrawerTests.swift; path = TrickDrawerTests/TrickDrawerTests.swift; sourceTree = "<group>"; };
 		FECC2FCB1D1D969F00AB2915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = TrickDrawerTests/Info.plist; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 				FE37CEE61D18887F0008AF4F /* LaunchScreen.xib */,
 				FE37CED81D18887F0008AF4F /* Supporting Files */,
 				FEC9415B1D21BB4E008CB0D5 /* NavigationController.swift */,
-				FEC9415D1D21BF21008CB0D5 /* SettingsViewController.swift */,
+				FEC941651D259B38008CB0D5 /* TricksTableViewController.swift */,
 			);
 			name = Views;
 			path = snow;
@@ -291,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEC941661D259B38008CB0D5 /* TricksTableViewController.swift in Sources */,
 				FEC941641D21C73F008CB0D5 /* snow.xcdatamodeld in Sources */,
 				FECC2FDA1D202DCD00AB2915 /* RandomUtil.swift in Sources */,
 				FE37CEE01D18887F0008AF4F /* DrawViewController.swift in Sources */,
@@ -298,7 +299,6 @@
 				FE37CEDB1D18887F0008AF4F /* AppDelegate.swift in Sources */,
 				FEC9415C1D21BB4E008CB0D5 /* NavigationController.swift in Sources */,
 				FECC2FD71D200DA300AB2915 /* UIColor.swift in Sources */,
-				FEC9415E1D21BF21008CB0D5 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
