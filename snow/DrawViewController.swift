@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class DrawViewController: UIViewController {
     
@@ -38,7 +39,25 @@ class DrawViewController: UIViewController {
     }
     
     func didTouchButton(sender: UIButton!) {
-        drawer = TrickDrawer()
+        
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let managedContext = appDelegate.managedObjectContext!
+        let fetchRequest = NSFetchRequest(entityName: "Trick")
+        
+        do {
+            let results = try managedContext.executeFetchRequest(fetchRequest)
+            var tricks: [String] = []
+            
+            for managedObject in results as! [NSManagedObject] {
+                tricks.append(managedObject.valueForKey("name") as! String)
+            }
+            
+            drawer = TrickDrawer(tricksArgument: tricks)
+            
+        } catch let error as NSError {
+            print("Could not fetch \(error), \(error.userInfo)")
+        }
+    
         resultLabel.text = drawer.drawTrick()
         resultLabel.hidden = false
     }
@@ -55,10 +74,23 @@ class DrawViewController: UIViewController {
     }
     
     func setupDoneButton() {
+        
+        //let button = UIBarButtonItem(title:"T's",style: .Plain,target: self, action: #selector(DrawViewController.didTouchDoneButton(_:)))
+        //self.navigationItem.rightBarButtonItem = button;
+        
         let button = UIBarButtonItem(
-            barButtonSystemItem: UIBarButtonSystemItem.Edit,
-            target: self, action: #selector(DrawViewController.didTouchDoneButton(_:)))
+            image: UIImage(named: "Settings"),
+            style: UIBarButtonItemStyle.Plain,
+            target: self,
+            action: #selector(DrawViewController.didTouchDoneButton(_:))
+        )
+        
         self.navigationItem.rightBarButtonItem = button;
+        
+        //let font = UIFont(name: "Helvetica", size: 18.0)
+        
+        //button.title = NSString(string: "\u{2699}") as String
+        //button.setTitleTextAttributes([NSFontAttributeName:font!], forState: UIControlState.Normal)
         
         let bar: UINavigationBar! = self.navigationController?.navigationBar
         
@@ -70,8 +102,7 @@ class DrawViewController: UIViewController {
     }
     
     func didTouchDoneButton(sender: UIButton) {
-        print("Hello, world");
-        let ttvc = TricksTableViewController()
+        let ttvc = MyTricksTableViewController()
         self.navigationController?.viewControllers.append(ttvc)
     }
 }

@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.backgroundColor = UIColor(netHex:0x1c85c1)
         
         let vc = DrawViewController()
-        let nc = NavigationController()
+        let nc = UINavigationController()
         nc.viewControllers.append(vc)
         
         self.window?.rootViewController = nc

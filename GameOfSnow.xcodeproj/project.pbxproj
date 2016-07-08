@@ -11,9 +11,9 @@
 		FE37CEE01D18887F0008AF4F /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE37CEDF1D18887F0008AF4F /* DrawViewController.swift */; };
 		FE37CEE51D18887F0008AF4F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE37CEE41D18887F0008AF4F /* Images.xcassets */; };
 		FE37CEE81D18887F0008AF4F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE37CEE61D18887F0008AF4F /* LaunchScreen.xib */; };
-		FEC9415C1D21BB4E008CB0D5 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC9415B1D21BB4E008CB0D5 /* NavigationController.swift */; };
+		FE9E956A1D2800720081CDAF /* AddEditTrickTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9E95691D2800720081CDAF /* AddEditTrickTableViewController.swift */; };
 		FEC941641D21C73F008CB0D5 /* snow.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FEC941621D21C73F008CB0D5 /* snow.xcdatamodeld */; };
-		FEC941661D259B38008CB0D5 /* TricksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC941651D259B38008CB0D5 /* TricksTableViewController.swift */; };
+		FEC941661D259B38008CB0D5 /* MyTricksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC941651D259B38008CB0D5 /* MyTricksTableViewController.swift */; };
 		FECC2FCA1D1D969F00AB2915 /* TrickDrawerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC2FC91D1D969F00AB2915 /* TrickDrawerTests.swift */; };
 		FECC2FD31D1D9A9B00AB2915 /* TrickDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC2FD21D1D9A9B00AB2915 /* TrickDrawer.swift */; };
 		FECC2FD41D1D9BD600AB2915 /* TrickDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC2FD21D1D9A9B00AB2915 /* TrickDrawer.swift */; };
@@ -22,6 +22,7 @@
 		FECC2FE21D202E0D00AB2915 /* RandomUtilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC2FE11D202E0D00AB2915 /* RandomUtilTests.swift */; };
 		FECC2FE91D202E6E00AB2915 /* RandomUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC2FD91D202DCD00AB2915 /* RandomUtil.swift */; };
 		FECC2FEA1D20345300AB2915 /* RandomUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC2FD91D202DCD00AB2915 /* RandomUtil.swift */; };
+		FEFE11A61D301EDF000F4EAF /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE11A51D301EDF000F4EAF /* TextFieldTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,9 +49,9 @@
 		FE37CEDF1D18887F0008AF4F /* DrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
 		FE37CEE41D18887F0008AF4F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FE37CEE71D18887F0008AF4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		FEC9415B1D21BB4E008CB0D5 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		FE9E95691D2800720081CDAF /* AddEditTrickTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEditTrickTableViewController.swift; sourceTree = "<group>"; };
 		FEC941631D21C73F008CB0D5 /* snow.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = snow.xcdatamodel; sourceTree = "<group>"; };
-		FEC941651D259B38008CB0D5 /* TricksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TricksTableViewController.swift; sourceTree = "<group>"; };
+		FEC941651D259B38008CB0D5 /* MyTricksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTricksTableViewController.swift; sourceTree = "<group>"; };
 		FECC2FC71D1D969F00AB2915 /* TrickDrawerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrickDrawerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FECC2FC91D1D969F00AB2915 /* TrickDrawerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrickDrawerTests.swift; path = TrickDrawerTests/TrickDrawerTests.swift; sourceTree = "<group>"; };
 		FECC2FCB1D1D969F00AB2915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = TrickDrawerTests/Info.plist; sourceTree = "<group>"; };
@@ -60,6 +61,7 @@
 		FECC2FDF1D202E0D00AB2915 /* RandomUtilTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomUtilTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FECC2FE11D202E0D00AB2915 /* RandomUtilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RandomUtilTests.swift; path = RandomUtilTests/RandomUtilTests.swift; sourceTree = "<group>"; };
 		FECC2FE31D202E0D00AB2915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = RandomUtilTests/Info.plist; sourceTree = "<group>"; };
+		FEFE11A51D301EDF000F4EAF /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,14 +113,15 @@
 		FE37CED71D18887F0008AF4F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FEFE11A01D301C8E000F4EAF /* Cells */,
 				FEC941621D21C73F008CB0D5 /* snow.xcdatamodeld */,
 				FE37CEDA1D18887F0008AF4F /* AppDelegate.swift */,
 				FE37CEDF1D18887F0008AF4F /* DrawViewController.swift */,
 				FE37CEE41D18887F0008AF4F /* Images.xcassets */,
 				FE37CEE61D18887F0008AF4F /* LaunchScreen.xib */,
 				FE37CED81D18887F0008AF4F /* Supporting Files */,
-				FEC9415B1D21BB4E008CB0D5 /* NavigationController.swift */,
-				FEC941651D259B38008CB0D5 /* TricksTableViewController.swift */,
+				FEC941651D259B38008CB0D5 /* MyTricksTableViewController.swift */,
+				FE9E95691D2800720081CDAF /* AddEditTrickTableViewController.swift */,
 			);
 			name = Views;
 			path = snow;
@@ -158,6 +161,14 @@
 				FECC2FE31D202E0D00AB2915 /* Info.plist */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		FEFE11A01D301C8E000F4EAF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FEFE11A51D301EDF000F4EAF /* TextFieldTableViewCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,13 +302,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEC941661D259B38008CB0D5 /* TricksTableViewController.swift in Sources */,
+				FEC941661D259B38008CB0D5 /* MyTricksTableViewController.swift in Sources */,
 				FEC941641D21C73F008CB0D5 /* snow.xcdatamodeld in Sources */,
 				FECC2FDA1D202DCD00AB2915 /* RandomUtil.swift in Sources */,
+				FE9E956A1D2800720081CDAF /* AddEditTrickTableViewController.swift in Sources */,
 				FE37CEE01D18887F0008AF4F /* DrawViewController.swift in Sources */,
 				FECC2FD31D1D9A9B00AB2915 /* TrickDrawer.swift in Sources */,
+				FEFE11A61D301EDF000F4EAF /* TextFieldTableViewCell.swift in Sources */,
 				FE37CEDB1D18887F0008AF4F /* AppDelegate.swift in Sources */,
-				FEC9415C1D21BB4E008CB0D5 /* NavigationController.swift in Sources */,
 				FECC2FD71D200DA300AB2915 /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

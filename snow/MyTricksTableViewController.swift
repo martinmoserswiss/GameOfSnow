@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class TricksTableViewController: UITableViewController {
+class MyTricksTableViewController: UITableViewController {
     
     var tricks = [NSManagedObject]()
     let cellIdentifier = "TricksTableViewCell"
@@ -41,6 +41,21 @@ class TricksTableViewController: UITableViewController {
         setupAddButton()
     }
     
+    override func viewDidAppear(animated: Bool) {
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let managedContext = appDelegate.managedObjectContext!
+        let fetchRequest = NSFetchRequest(entityName: "Trick")
+        
+        do {
+            let results = try managedContext.executeFetchRequest(fetchRequest)
+            tricks = results as! [NSManagedObject]
+        } catch let error as NSError {
+            print("Could not fetch \(error), \(error.userInfo)")
+        }
+        
+        tableView.reloadData()
+    }
+    
     func setupAddButton() {
         let button = UIBarButtonItem(
             barButtonSystemItem: UIBarButtonSystemItem.Add,
@@ -49,26 +64,8 @@ class TricksTableViewController: UITableViewController {
     }
     
     func didTouchAddButton(sender: UIButton) {
-        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        
-        let managedContext = appDelegate.managedObjectContext
-        
-        let entity = NSEntityDescription.entityForName("Trick", inManagedObjectContext: managedContext!)
-        
-        let trick = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
-        
-        trick.setValue("BS 1080 Mute", forKey: "name")
-        
-        do {
-            try managedContext?.save()
-        } catch let error as NSError {
-            print("Could not save \(error), \(error.userInfo)")
-        }
-        
-        tricks.append(trick)
-        
-        tableView.reloadData()
-        
+        let attv = AddEditTrickTableViewController()
+        self.navigationController?.viewControllers.append(attv)
     }
 
     override func didReceiveMemoryWarning() {
@@ -96,34 +93,50 @@ class TricksTableViewController: UITableViewController {
         return cell
     }
     
-
+    override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
+        
+        let edit = UITableViewRowAction(style: .Normal, title: "Ändern") { action, index in
+            self.editTrick(index)
+        }
+        edit.backgroundColor = UIColor.orangeColor()
+        
+        let delete = UITableViewRowAction(style: .Normal, title: "Löschen") {action, index in
+            self.deleteTrick(index)
+        }
+        delete.backgroundColor = UIColor.redColor()
+        
+        return [delete, edit]
+    }
     
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         return true
     }
- 
-
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        
+    
+    func deleteTrick(indexPath: NSIndexPath) {
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let managedContext = appDelegate.managedObjectContext!
         
-        if editingStyle == .Delete {
-            let trick = self.tricks[indexPath.row]
-            managedContext.deleteObject(trick)
-            tricks.removeAtIndex(indexPath.row)
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-            
-            do {
-                try managedContext.save()
-            } catch let error as NSError {
-                print("Could not save \(error), \(error.userInfo)")
-            }
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        let trick = self.tricks[indexPath.row]
+        managedContext.deleteObject(trick)
+        tricks.removeAtIndex(indexPath.row)
+        tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+        
+        do {
+            try managedContext.save()
+        } catch let error as NSError {
+            print("Could not save \(error), \(error.userInfo)")
+        }
+    }
+    
+    func editTrick(indexPath: NSIndexPath) {
+        let attv = AddEditTrickTableViewController()
+        attv.trickToEdit = tricks[indexPath.row];
+        self.navigationController?.viewControllers.append(attv)
+    }
+
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath){
+        
     }
  
 

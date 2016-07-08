@@ -12,11 +12,14 @@ class TrickDrawer {
     
     var tricks: [String]
     
-    init() {
-        tricks = ["Bs 720 Mute","Bs 360 Mute","Bs 180 Mute","Fs 180 Melon","Fs 360 Indy","Fs 540 Tail","Bs 540 Nose","Fs 720 Tail"]
+    init(tricksArgument: [String]) {
+        tricks = tricksArgument
     }
     
     func drawTrick() -> String {
+        if tricks.count == 0 {
+            return "Erfasse Tricks!"
+        }
         return tricks[RandomUtil.getRandomInt(tricks.count)]
     }
 }
