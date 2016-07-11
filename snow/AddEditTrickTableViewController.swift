@@ -16,7 +16,6 @@ class AddEditTrickTableViewController: UITableViewController {
 
     convenience init() {
         self.init(style: .Grouped)
-        title = "Neuer Trick"
     }
     
     override func viewDidLoad() {
@@ -52,7 +51,7 @@ class AddEditTrickTableViewController: UITableViewController {
             cellIdentifier = "TextFieldTableViewCell";
             let textFieldCell = TextFieldTableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: cellIdentifier, margin: 15.0);
             self.trickNameTextField = textFieldCell.textField;
-            self.trickNameTextField!.placeholder = "Trickname"
+            self.trickNameTextField!.placeholder = NSLocalizedString("AddEditTrickTableViewController.TrickNameTextField.Placeholder", comment: "")
             
             if self.trickToEdit != nil {
                 self.trickNameTextField!.text = self.trickToEdit?.valueForKey("name") as? String
@@ -77,10 +76,10 @@ class AddEditTrickTableViewController: UITableViewController {
         let managedContext = appDelegate.managedObjectContext
         
         if trickToEdit != nil {
-            print("Update Trick!")
+            //Update Trick
             trickToEdit?.setValue(self.trickNameTextField?.text, forKey: "name")
         } else {
-            print("Save new Trick!")
+            //Save new Trick!
             let entity = NSEntityDescription.entityForName("Trick", inManagedObjectContext: managedContext!)
             let trick = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
             trick.setValue(self.trickNameTextField?.text, forKey: "name")
@@ -93,50 +92,4 @@ class AddEditTrickTableViewController: UITableViewController {
             print("Could not save \(error), \(error.userInfo)")
         }
     }
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

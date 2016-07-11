@@ -16,7 +16,7 @@ class MyTricksTableViewController: UITableViewController {
     
     convenience init() {
         self.init(style: .Grouped)
-        title = "Deine Tricks"
+        title = NSLocalizedString("MyTricksTableViewController.Title", comment: "")
     }
 
     override func viewDidLoad() {
@@ -65,6 +65,7 @@ class MyTricksTableViewController: UITableViewController {
     
     func didTouchAddButton(sender: UIButton) {
         let attv = AddEditTrickTableViewController()
+        attv.title = NSLocalizedString("AddEditTrickTableViewController.Title.New", comment: "")
         self.navigationController?.viewControllers.append(attv)
     }
 
@@ -95,12 +96,12 @@ class MyTricksTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
         
-        let edit = UITableViewRowAction(style: .Normal, title: "Ändern") { action, index in
+        let edit = UITableViewRowAction(style: .Normal, title: NSLocalizedString("MyTricksTableViewController.Edit", comment: "")) { action, index in
             self.editTrick(index)
         }
         edit.backgroundColor = UIColor.orangeColor()
         
-        let delete = UITableViewRowAction(style: .Normal, title: "Löschen") {action, index in
+        let delete = UITableViewRowAction(style: .Normal, title: NSLocalizedString("MyTricksTableViewController.Delete", comment: "")) {action, index in
             self.deleteTrick(index)
         }
         delete.backgroundColor = UIColor.redColor()
@@ -132,6 +133,8 @@ class MyTricksTableViewController: UITableViewController {
     func editTrick(indexPath: NSIndexPath) {
         let attv = AddEditTrickTableViewController()
         attv.trickToEdit = tricks[indexPath.row];
+        attv.title = NSLocalizedString("AddEditTrickTableViewController.Title.Edit", comment: "")
+        
         self.navigationController?.viewControllers.append(attv)
     }
 

@@ -23,6 +23,7 @@
 		FECC2FE91D202E6E00AB2915 /* RandomUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC2FD91D202DCD00AB2915 /* RandomUtil.swift */; };
 		FECC2FEA1D20345300AB2915 /* RandomUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC2FD91D202DCD00AB2915 /* RandomUtil.swift */; };
 		FEFE11A61D301EDF000F4EAF /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFE11A51D301EDF000F4EAF /* TextFieldTableViewCell.swift */; };
+		FEFE11A81D33EFF5000F4EAF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FEFE11A71D33EFF5000F4EAF /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		FECC2FE11D202E0D00AB2915 /* RandomUtilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RandomUtilTests.swift; path = RandomUtilTests/RandomUtilTests.swift; sourceTree = "<group>"; };
 		FECC2FE31D202E0D00AB2915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = RandomUtilTests/Info.plist; sourceTree = "<group>"; };
 		FEFE11A51D301EDF000F4EAF /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		FEFE11A71D33EFF5000F4EAF /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				FE37CED91D18887F0008AF4F /* Info.plist */,
+				FEFE11A71D33EFF5000F4EAF /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE37CEE81D18887F0008AF4F /* LaunchScreen.xib in Resources */,
+				FEFE11A81D33EFF5000F4EAF /* Localizable.strings in Resources */,
 				FE37CEE51D18887F0008AF4F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

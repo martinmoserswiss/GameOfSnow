@@ -32,7 +32,7 @@ class DrawViewController: UIViewController {
         let button = UIButton(frame: CGRectMake(frame.size.width/2-100, frame.size.height/2-200, 200, 200))
         button.backgroundColor = UIColor(netHex: 0xFFA906)
         button.layer.cornerRadius = 0.5 * button.bounds.size.width
-        button.setTitle("Trick!", forState: UIControlState.Normal)
+        button.setTitle(NSLocalizedString("DrawViewController.DrawButton", comment: ""), forState: UIControlState.Normal)
         button.titleLabel!.font =  UIFont(name: (button.titleLabel!.font?.fontName)!, size: 55)
         button.addTarget(self, action: #selector(DrawViewController.didTouchButton(_:)), forControlEvents: .TouchUpInside)
         return button
@@ -75,9 +75,6 @@ class DrawViewController: UIViewController {
     
     func setupDoneButton() {
         
-        //let button = UIBarButtonItem(title:"T's",style: .Plain,target: self, action: #selector(DrawViewController.didTouchDoneButton(_:)))
-        //self.navigationItem.rightBarButtonItem = button;
-        
         let button = UIBarButtonItem(
             image: UIImage(named: "Settings"),
             style: UIBarButtonItemStyle.Plain,
@@ -86,12 +83,6 @@ class DrawViewController: UIViewController {
         )
         
         self.navigationItem.rightBarButtonItem = button;
-        
-        //let font = UIFont(name: "Helvetica", size: 18.0)
-        
-        //button.title = NSString(string: "\u{2699}") as String
-        //button.setTitleTextAttributes([NSFontAttributeName:font!], forState: UIControlState.Normal)
-        
         let bar: UINavigationBar! = self.navigationController?.navigationBar
         
         bar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)

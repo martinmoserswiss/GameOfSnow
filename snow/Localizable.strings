@@ -1,0 +1,14 @@
+/* 
+  i18n.strings
+  GameOfSnow
+
+  Created by Martin Moser on 11.07.16.
+  Copyright © 2016 martinmoser. All rights reserved.
+*/
+"DrawViewController.DrawButton"="Trick!";
+"MyTricksTableViewController.Title"="Deine Tricks";
+"MyTricksTableViewController.Edit"="Ändern";
+"MyTricksTableViewController.Delete"="Löschen";
+"AddEditTrickTableViewController.Title.New"="Neuer Trick";
+"AddEditTrickTableViewController.Title.Edit"="Ändern";
+"AddEditTrickTableViewController.TrickNameTextField.Placeholder"="Trickname";
