@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class AddEditTrickTableViewController: UITableViewController {
+class AddEditTrickTableViewController: UITableViewController, UITextFieldDelegate {
     
     internal var trickToEdit: NSManagedObject?;
     private var trickNameTextField: UITextField?;
@@ -23,6 +23,7 @@ class AddEditTrickTableViewController: UITableViewController {
         
         tableView.backgroundColor = UIColor(netHex:0x1c85c1)
         setupDoneButton()
+        self.trickNameTextField?.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -78,6 +79,8 @@ class AddEditTrickTableViewController: UITableViewController {
         if trickToEdit != nil {
             //Update Trick
             trickToEdit?.setValue(self.trickNameTextField?.text, forKey: "name")
+            let dvc = navigationController?.viewControllers[0] as! DrawViewController
+            dvc.resultLabel.hidden = true
         } else {
             //Save new Trick!
             let entity = NSEntityDescription.entityForName("Trick", inManagedObjectContext: managedContext!)

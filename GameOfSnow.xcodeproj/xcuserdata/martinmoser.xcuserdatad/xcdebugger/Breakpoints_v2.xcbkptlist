@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "snow/AddEditTrickTableViewController.swift"
-            timestampString = "489945040.786082"
+            timestampString = "489950702.790822"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "didTouchDoneButton(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

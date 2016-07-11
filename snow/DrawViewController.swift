@@ -70,6 +70,8 @@ class DrawViewController: UIViewController {
         resultLabel.text = ""
         resultLabel.hidden = true
         resultLabel.font = UIFont(name: resultLabel.font.fontName, size: 40)
+        resultLabel.lineBreakMode = NSLineBreakMode.ByWordWrapping
+        resultLabel.numberOfLines = 3
         return resultLabel
     }
     
