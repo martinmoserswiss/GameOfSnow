@@ -6,6 +6,8 @@
   Copyright © 2016 martinmoser. All rights reserved.
 */
 "DrawViewController.DrawButton"="Trick!";
+"DrawViewController.bailedButton"="x";
+"DrawViewController.stompedButton"="✓";
 "MyTricksTableViewController.Title"="Deine Tricks";
 "MyTricksTableViewController.Edit"="Ändern";
 "MyTricksTableViewController.Delete"="Löschen";
