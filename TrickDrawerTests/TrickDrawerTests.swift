@@ -14,7 +14,9 @@ class TrickDrawerTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        trickDrawer = TrickDrawer()
+        
+        let tricks: [String] = ["Bs 7 Mute","Tail grap"]
+        trickDrawer = TrickDrawer(tricksArgument: tricks)
     }
     
     override func tearDown() {
